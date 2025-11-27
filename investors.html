@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TribeArc Nation - Investors & Partners</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="text-gray-800 bg-white relative overflow-x-hidden">
+  <!-- HERO SECTION -->
+  <section
+    class="relative text-white overflow-hidden h-[912px] md:h-fit bg-gradient-to-b from-[#1AC47D47] via-[#D9F4E980] to-white pt-[120px] md:pt-40 pb-10 md:pb-32">
+    <!-- HEADER -->
+    <header class="w-full px-4 absolute top-6 left-1/2 -translate-x-1/2 z-20" data-aos="fade-down" data-aos-delay="100">
+      <nav
+        class="bg-white w-full md:w-[95%] lg:w-[85%] mx-auto p-4 rounded-2xl shadow-sm shadow-[#B8D8BB] flex items-center justify-between">
+        <a href="./index.html"><img src="./assets/images/logo.svg" alt="Tribearc" class="h-8" /></a>
+
+        <ul class="hidden md:flex text-black items-center lg:gap-6 md:gap-4 text-sm font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+
+          <a href="./contact.html">
+            <button
+              class="cursor-pointer bg-[#4CA054] hover:bg-green-700 transition duration-300 py-2.5 px-4 rounded-xl text-white font-semibold">
+              Contact Us
+            </button></a>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <button id="mobile-menu-btn" class="md:hidden cursor-pointer z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="#000" d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar"
+      class="fixed top-0 right-0 h-full w-[70%] rounded-l-xl bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
+      <!-- Close Button -->
+      <button id="close-sidebar-btn" class="absolute top-6 right-6 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#000"
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+        </svg>
+      </button>
+
+      <!-- Menu stuff -->
+      <div class="pt-20 px-6">
+        <img src="./assets/images/logo.svg" alt="Tribearc" class="h-8 mb-8" />
+
+        <ul class="flex flex-col gap-6 text-black text-base font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+        </ul>
+
+        <a href="./contact.html">
+          <button
+            class="w-full bg-[#4CA054] hover:bg-green-700 transition duration-300 py-3 px-4 rounded-xl text-white font-semibold mt-8">
+            Contact Us
+          </button></a>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="sidebar-overlay"
+      class="fixed inset-0 bg-black/50 bg-opacity-50 hidden transition-opacity duration-300 z-30"></div>
+
+    <!-- HERO CONTENT -->
+    <div
+      class="w-full flex flex-col md:flex-row justify-between items-start md:gap-20 md:w-[95%] lg:w-[85%] mx-auto relative z-10 mt-10 px-6"
+      data-aos="fade-up">
+      <!-- texts -->
+      <div class="md:w-1/2 w-full flex flex-col gap-2">
+        <div class="bg-gray-50 text-[#69707C] text-sm py-2 px-4 w-fit rounded-full mb-6 flex items-center"
+          data-aos="fade-down" data-aos-delay="100">
+          <span class="bg-green-600 w-1 h-1 rounded-full inline-block mr-2"></span>
+          Together We Rise Above Survival
+          <span class="bg-green-600 w-1 h-1 rounded-full inline-block ml-2"></span>
+        </div>
+
+        <h1 class="text-3xl md:text-5xl font-bold py-2 text-black">
+          Empower Millions. Build a Better Economy.
+        </h1>
+        <p class="text-sm md:text-base mb-8 text-[#69707C] leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+          TribeArc Nation is transforming how Nigerians save, live, and grow.
+          Join us to create lasting social and economic impact.
+        </p>
+
+        <div class="flex mb-8 gap-4 items-center flex-wrap">
+          <a href="./join_tribearc.html"
+            class="bg-[#4CA054] text-sm lg:text-base text-white font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:bg-green-700 transition transform hover:scale-105"
+            data-aos="fade-right" data-aos-delay="100">
+            Partner With Us
+          </a>
+          <a href="./contact.html"
+            class="bg-white text-sm lg:text-base text-green-600 font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:shadow-2xl transition duration-300 transform hover:scale-105"
+            data-aos="fade-left" data-aos-delay="100">
+            Talk to Our Team
+          </a>
+        </div>
+      </div>
+
+      <!-- images -->
+      <div class="md:w-1/2 w-full relative z-10 h-80 md:h-[420px]">
+        <!-- Top-right small image -->
+        <img src="./assets/images/investors_herobg1.png" alt="TribeArc" data-aos="fade-down" data-aos-delay="100"
+          class="border-5 border-[#76d6ae] bg-[#FFF5F5] rounded-3xl absolute w-40 md:w-50 left-4 md:-left-10 -bottom-5 md:-bottom-8 -rotate-4 z-1 shadow-lg" />
+
+        <!-- Center big image -->
+        <img src="./assets/images/investors_herobg2.png" alt="Tribearc" data-aos="fade-up" data-aos-delay="100"
+          class="rounded-4xl absolute w-60 md:w-[993px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-0" />
+
+        <!-- lady with book image -->
+        <img src="./assets/images/investors_hero-bg3.png" alt="Tribearc" data-aos="fade-up" data-aos-delay="100"
+          class="md:hidden lg:block border-5 border-[#FF9900] bg-[#FFFEE0] rounded-3xl absolute w-35 md:w-56 top-0 md:-top-10 right-4 md:-right-20 rotate-5" />
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT STATS -->
+  <section class="flex justify-between flex-wrap py-10 md:py-20 px-5 bg-[#4CA054] text-white" data-aos="fade-up"
+    data-aos-delay="100">
+    <div class="flex-1 min-w-[200px] text-center m-4">
+      <h2 class="text-4xl font-bold mb-1">500+</h2>
+      <p class="text-sm">Families Supported Monthly</p>
+    </div>
+
+    <div class="flex-1 min-w-[200px] text-center m-4">
+      <h2 class="text-4xl font-bold mb-1">₦10M+</h2>
+      <p class="text-sm">Micro-Business Capital Distributed</p>
+    </div>
+
+    <div class="flex-1 min-w-[200px] text-center m-4">
+      <h2 class="text-4xl font-bold mb-1">1,200+</h2>
+      <p class="text-sm">Lives Empowered</p>
+    </div>
+  </section>
+
+  <!-- PARTNER OPPORTUNITIES -->
+  <section class="py-20 px-6 max-w-6xl mx-auto relative" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      Partner Opportunities <br />
+      <span class="text-sm md:text-base text-[#757575]">Collaborate with us to multiply impact across Nigeria.</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- first card -->
+      <div data-aos="fade-right" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-purple-100 cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="mb-6">
+          <rect width="24" height="24" fill="none" />
+          <g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.7">
+            <path stroke-linecap="round"
+              d="m5.5 11l-.5-.5L7 7L4.5 8L2 7l2 3.5l-3.5 5v3l2.5 2h.5m-1-10H6m11.5.5l.5-.5L16 7l2.5 1L21 7l-2 3.5l3.5 5v3l-2.5 2h-.5m1-10H17m-4.5 4h-2l-.5 1l.5 1h2l.5 1l-.5 1h-2m1-4v-1m0 6v-1" />
+            <path d="m11.5 4l2 1.5L16 4l-2.5 5.5l4 5v5l-4 2h-4l-4-2v-5l4-5L7 4l2.5 1.5z" />
+            <path stroke-linecap="round" d="M15.5 9.5h-8" />
+          </g>
+        </svg>
+
+        <h3 class="text-xl font-semibold mb-2">MSME Funding Partners</h3>
+        <p class="text-gray-700 text-sm">
+          Provide low-cost loans and capital to micro and small businesses in
+          our network.
+        </p>
+      </div>
+
+      <!-- second card -->
+      <div data-aos="fade-right" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-[#FFF8ED] cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="mb-6">
+          <rect width="24" height="24" fill="none" />
+          <path fill="#000"
+            d="m15.5 19.925l-4.25-4.25l1.4-1.4l2.85 2.85l5.65-5.65l1.4 1.4zM21 10h-2V5h-2v3H7V5H5v14h6v2H5q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h4.175q.275-.875 1.075-1.437T12 1q1 0 1.788.563T14.85 3H19q.825 0 1.413.588T21 5zm-9-5q.425 0 .713-.288T13 4t-.288-.712T12 3t-.712.288T11 4t.288.713T12 5" />
+        </svg>
+
+        <h3 class="text-xl font-semibold mb-2">Logistics & Supply Chain</h3>
+        <p class="text-gray-700 text-sm">
+          Ensure market women and families have access to affordable, quality
+          food.
+        </p>
+      </div>
+
+      <!-- third card -->
+      <div data-aos="fade-left" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-[#FFFEE0] cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="mb-6">
+          <rect width="24" height="24" fill="none" />
+          <path fill="none" stroke="#000" stroke-width="2"
+            d="M12 16V7m0 4c0-3 0-6-7-6c0 3 0 6 7 6Zm-8 5h16m-2 0l-2 7H8l-2-7m6-9c0-3 0-6 7-6c0 3 0 6-7 6Z" />
+        </svg>
+
+        <h3 class="text-xl font-semibold mb-2">
+          Food Supply & Agro Partners
+        </h3>
+        <p class="text-gray-700 text-sm">
+          Ensure market women and families have access to affordable, quality
+          food.
+        </p>
+      </div>
+
+      <!-- fourth card -->
+      <div data-aos="fade-left" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-[#F2FFFC] cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="mb-6">
+          <rect width="24" height="24" fill="none" />
+          <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <path d="m18 20l3.824-3.824a.6.6 0 0 0 .176-.424V10.5A1.5 1.5 0 0 0 20.5 9v0a1.5 1.5 0 0 0-1.5 1.5V15" />
+            <path
+              d="m18 16l.858-.858a.48.48 0 0 0 .142-.343v0a.49.49 0 0 0-.268-.433l-.443-.221a2 2 0 0 0-2.308.374l-.895.895a2 2 0 0 0-.586 1.414V20M6 20l-3.824-3.824A.6.6 0 0 1 2 15.752V10.5A1.5 1.5 0 0 1 3.5 9v0A1.5 1.5 0 0 1 5 10.5V15" />
+            <path
+              d="m6 16l-.858-.858A.5.5 0 0 1 5 14.799v0c0-.183.104-.35.268-.433l.443-.221a2 2 0 0 1 2.308.374l.895.895a2 2 0 0 1 .586 1.414V20m4.167-8h-3.334V9.667H8V6.333h2.333V4h3.334v2.333H16v3.334h-2.333z" />
+          </g>
+        </svg>
+
+        <h3 class="text-xl font-semibold mb-2">Healthcare & Wellness</h3>
+        <p class="text-gray-700 text-sm">
+          Extend access to clinics, telemedicine, and health programs for
+          members in need.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="bg-gradient-to-t from-[#1AC47D47] via-[#D9F4E980] to-white py-20 px-6 text-center relative"
+    data-aos="fade-up">
+    <h2 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-down" data-aos-delay="100">
+      Your Support Changes Lives
+    </h2>
+    <p class="mb-6 text-sm md:text-base max-w-4xl md:w-[65%] text-center mx-auto" data-aos="fade-up"
+      data-aos-delay="100">
+      Whether you are an investor, grant-giving organization, or corporate
+      partner, TribeArc Nation provides a transparent, high-impact channel to
+      reach those who need it most.
+    </p>
+    <div class="flex justify-center mb-8 gap-4 flex-wrap">
+      <a href="tel:234-XXX-XXXX-XXX"
+        class="bg-[#4CA054] text-xs md:text-base text-white font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:bg-green-700 transition transform hover:scale-105"
+        data-aos="fade-right" data-aos-delay="100">
+        Contact Us via WhatsApp
+      </a>
+      <a href="./contact.html"
+        class="bg-white text-xs md:text-base text-green-600 font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:shadow-2xl transition duration-300 transform hover:scale-105"
+        data-aos="fade-left" data-aos-delay="100">
+        Request Partnership Proposal
+      </a>
+    </div>
+  </section>
+
+  <!-- CONSISTENT FOOTER -->
+  <div id="footer"></div>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

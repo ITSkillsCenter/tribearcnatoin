@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join TribeArc Nation</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="text-gray-800 relative overflow-x-hidden">
+  <!-- HERO SECTION -->
+  <section
+    class="relative text-white flex flex-col items-center overflow-hidden bg-gradient-to-b from-[#1AC47D47] via-[#D9F4E980] to-white pt-[120px] md:pt-40">
+    <!-- HEADER -->
+    <header class="w-full px-4 absolute top-6 left-1/2 -translate-x-1/2 z-20" data-aos="fade-down" data-aos-delay="100">
+      <nav
+        class="bg-white w-full md:w-[95%] lg:w-[85%] mx-auto p-4 rounded-2xl shadow-sm shadow-[#B8D8BB] flex items-center justify-between">
+        <a href="./index.html"><img src="./assets/images/logo.svg" alt="Tribearc" class="h-8" /></a>
+
+        <ul class="hidden md:flex text-black items-center md:gap-4 lg:gap-6 text-sm font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+
+          <a href="./contact.html">
+            <button
+              class="cursor-pointer bg-[#4CA054] hover:bg-green-700 transition duration-300 py-2.5 px-4 rounded-xl text-white font-semibold">
+              Contact Us
+            </button></a>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <button id="mobile-menu-btn" class="md:hidden cursor-pointer z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="#000" d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar"
+      class="fixed top-0 right-0 h-full w-[70%] rounded-l-xl bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
+      <!-- Close Button -->
+      <button id="close-sidebar-btn" class="absolute top-6 right-6 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#000"
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+        </svg>
+      </button>
+
+      <!-- Menu stuff -->
+      <div class="pt-20 px-6">
+        <img src="./assets/images/logo.svg" alt="Tribearc" class="h-8 mb-8" />
+
+        <ul class="flex flex-col gap-6 text-black text-base font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+        </ul>
+
+        <a href="./contact.html">
+          <button
+            class="w-full bg-[#4CA054] hover:bg-green-700 transition duration-300 py-3 px-4 rounded-xl text-white font-semibold mt-8">
+            Contact Us
+          </button></a>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="sidebar-overlay"
+      class="fixed inset-0 bg-black/50 bg-opacity-50 hidden transition-opacity duration-300 z-30"></div>
+
+    <!-- HERO CONTENT -->
+    <div
+      class="w-full md:w-[90%] lg:w-[80%] mx-auto px-4 relative z-10 mt-10 md:mt-8 flex flex-col gap-14 items-center">
+      <div class="text-center px-4 max-w-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold py-2 text-black" data-aos="fade-down" data-aos-delay="100">
+          Ready to start saving your way to peace?
+        </h1>
+
+        <p class="text-sm md:text-base mb-8 text-[#69707C] leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+          Join TribeArc Nation today and secure your life, health, and hustle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="w-full flex justify-center py-10 px-4 bg-gradient-to-b from-white to-[#afe2bc]">
+    <div class="w-full max-w-4xl bg-white rounded-3xl shadow-lg md:p-10 p-5">
+      <!-- Header -->
+      <h2 class="text-3xl font-semibold text-center text-black">
+        Join the Nation
+      </h2>
+      <p class="text-gray-500 text-center mt-2 mb-10">
+        Complete this form to join us
+      </p>
+
+      <form action="http://localhost:8888/tribe-arc/mailer.php" novalidate class="grid grid-cols-1 md:grid-cols-2 gap-6" method="POST">
+        <!-- name -->
+        <div class="w-full">
+          <input id="name" name="name" type="text" placeholder="Full Name" required
+            class="w-full bg-gray-100 px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-green-500 transition" />
+        </div>
+
+        <!-- phone -->
+        <div class="w-full">
+          <input id="phone" name="phone" type="text" placeholder="Phone Number" maxlength="11"
+            class="w-full bg-gray-100 px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-green-500 transition" />
+          <p id="errorPhone" class="hidden text-xs items-center gap-1 text-red-500 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" class="inline">
+              <rect width="24" height="24" fill="none" />
+              <path fill="#e80a0a"
+                d="M12 17q.425 0 .713-.288T13 16t-.288-.712T12 15t-.712.288T11 16t.288.713T12 17m-1-4h2V7h-2zm1 9q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+            </svg>
+            Enter Valid Number
+          </p>
+        </div>
+
+        <!-- email -->
+        <div class="w-full">
+          <input id="email" name="email" type="email" placeholder="Email Address"
+            class="w-full bg-gray-100 px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-green-500 transition" />
+          <p id="errorEmail" class="hidden text-xs items-center gap-1 text-red-500 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" class="inline">
+              <rect width="24" height="24" fill="none" />
+              <path fill="#e80a0a"
+                d="M12 17q.425 0 .713-.288T13 16t-.288-.712T12 15t-.712.288T11 16t.288.713T12 17m-1-4h2V7h-2zm1 9q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+            </svg>
+            Enter Valid Email
+          </p>
+        </div>
+
+        <!-- address -->
+        <div class="w-full">
+          <input id="address" name="address" type="text" placeholder="Home Address"
+            class="w-full bg-gray-100 px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-green-500 transition" />
+        </div>
+
+        <!-- gender -->
+        <div class="w-full">
+          <input id="gender" name="gender" type="text" placeholder="Select Gender"
+            class="w-full bg-gray-100 px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-green-500 transition" />
+          <p id="genderError" class="hidden text-xs items-center gap-1 text-red-500 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" class="inline">
+              <rect width="24" height="24" fill="none" />
+              <path fill="#e80a0a"
+                d="M12 17q.425 0 .713-.288T13 16t-.288-.712T12 15t-.712.288T11 16t.288.713T12 17m-1-4h2V7h-2zm1 9q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+            </svg>
+            Enter Valid Gender
+          </p>
+        </div>
+
+        <!-- age -->
+        <div class="w-full">
+          <input id="age" name="age" type="number" placeholder="Age"
+            class="w-full bg-gray-100 px-5 py-4 rounded-xl outline-none focus:ring-2 focus:ring-green-500 transition" />
+        </div>
+
+        <!-- General -->
+        <div class="md:col-span-2  mx-auto">
+          <p id="reqField" class="hidden text-xs items-center gap-1  text-red-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" class="inline">
+              <rect width="24" height="24" fill="none" />
+              <path fill="#e80a0a"
+                d="M12 17q.425 0 .713-.288T13 16t-.288-.712T12 15t-.712.288T11 16t.288.713T12 17m-1-4h2V7h-2zm1 9q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+            </svg>
+            Missing Required Fields
+          </p>
+        </div>
+
+        <!-- Button -->
+        <button type="submit"
+          class="md:col-span-2 w-full bg-green-600 text-white py-4 rounded-xl font-semibold hover:bg-green-700 transition active:scale-95 cursor-pointer">
+          Proceed
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Consistent footer -->
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/joinTribac.js"></script>
+
+  <script>
+    AOS.init({ duration: 600, easing: "ease-in-out", once: true });
+  </script>
+</body>
+
+</html>

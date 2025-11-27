@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TribeArc Nation</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="text-gray-800 bg-white relative overflow-x-hidden">
+  <!-- HERO SECTION -->
+  <section
+    class="relative text-white flex flex-col items-center overflow-hidden bg-gradient-to-b from-[#1AC47D47] via-[#D9F4E980] to-white pt-[120px] md:pt-[160px] pb-10">
+    <!-- HEADER -->
+    <header class="w-full px-4 absolute top-6 left-1/2 -translate-x-1/2 z-20" data-aos="fade-down" data-aos-delay="100">
+      <nav
+        class="bg-white w-full md:w-[95%] lg:w-[85%] mx-auto p-4 rounded-2xl shadow-sm shadow-[#B8D8BB] flex items-center justify-between">
+        <a href="./index.html"><img src="./assets/images/logo.svg" alt="Tribearc" class="h-8" /></a>
+
+        <ul class="hidden md:flex text-black items-center md:gap-4 lg:gap-6 text-sm font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+
+          <a href="./contact.html">
+            <button
+              class="cursor-pointer bg-[#4CA054] hover:bg-green-700 transition duration-300 py-2.5 px-4 rounded-xl text-white font-semibold">
+              Contact Us
+            </button></a>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <button id="mobile-menu-btn" class="md:hidden cursor-pointer z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="#000" d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar"
+      class="fixed top-0 right-0 h-full w-[70%] rounded-l-xl bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
+      <!-- Close Button -->
+      <button id="close-sidebar-btn" class="absolute top-6 right-6 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#000"
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+        </svg>
+      </button>
+
+      <!-- Menu stuff -->
+      <div class="pt-20 px-6">
+        <img src="./assets/images/logo.svg" alt="Tribearc" class="h-8 mb-8" />
+
+        <ul class="flex flex-col gap-6 text-black text-base font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+        </ul>
+
+        <a href="./contact.html">
+          <button
+            class="w-full bg-[#4CA054] hover:bg-green-700 transition duration-300 py-3 px-4 rounded-xl text-white font-semibold mt-8">
+            Contact Us
+          </button></a>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="sidebar-overlay"
+      class="fixed inset-0 bg-black/50 bg-opacity-50 hidden transition-opacity duration-300 z-30"></div>
+
+    <!-- HERO CONTENT -->
+    <div
+      class="w-full md:w-[90%] lg:w-[80%] mx-auto px-4 relative z-10 mt-10 md:mt-8 flex flex-col gap-14 items-center">
+      <div class="text-center px-4 max-w-2xl">
+        <div class="bg-gray-50 text-[#69707C] text-sm py-2 px-4 w-fit mx-auto rounded-full mb-6 flex items-center"
+          data-aos="fade-down" data-aos-delay="100">
+          <span class="bg-green-600 w-1 h-1 rounded-full inline-block mr-2"></span>
+          Together We Rise Above Survival
+          <span class="bg-green-600 w-1 h-1 rounded-full inline-block ml-2"></span>
+        </div>
+
+        <h1 class="text-3xl md:text-5xl font-bold py-2 text-black" data-aos="fade-down" data-aos-delay="100">
+          Save Small. Live Better.
+        </h1>
+
+        <p class="text-sm md:text-base mb-8 text-[#69707C] leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+          Life in Nigeria shouldn't be just about survival. TribeArc Nation
+          helps you secure your food, rent, health, and peace of mind — all
+          through simple savings that work for you.
+        </p>
+
+        <div class="flex justify-center mb-8 gap-4 flex-wrap">
+          <a href="./contact.html"
+            class="bg-white text-sm md:text-base text-green-600 font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:shadow-2xl transition duration-300 transform hover:scale-105"
+            data-aos="fade-right" data-aos-delay="100">
+            Talk to a Field Officer
+          </a>
+          <a href="./join_tribearc.html"
+            class="bg-[#4CA054] text-sm md:text-base text-white font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:bg-green-700 transition transform hover:scale-105"
+            data-aos="fade-left" data-aos-delay="100">
+            Join Now
+          </a>
+        </div>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="w-full">
+        <img src="./assets/images/hero-img.svg" alt="Hero" class="w-full max-w-[1100px] mx-auto object-contain"
+          data-aos="fade-left" data-aos-delay="100" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS SECTION -->
+  <section class="py-20 px-6 max-w-6xl mx-auto relative">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      Your Savings, Divided for Real-Life Support.
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- first card -->
+      <div
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-purple-100 cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 38 32" class="mb-3">
+          <rect width="38" height="32" fill="none" />
+          <g fill="#000">
+            <path
+              d="M32.509 7.5a.5.5 0 0 0 .5-.5V5.335a1.64 1.64 0 0 0-1.638-1.638h-2.687l-.613-1.809a.5.5 0 0 0-.619-.318L12.899 5.994a.501.501 0 0 0 .292.957L27.28 2.667l1.343 3.965a.499.499 0 1 0 .947-.321l-.547-1.615h2.349c.352 0 .638.286.638.638V7c-.001.276.223.5.499.5" />
+            <path
+              d="M36.5 15a.5.5 0 0 0 0 1c.351 0 .5.149.5.5v6c0 .351-.149.5-.5.5h-8c-.351 0-.5-.149-.5-.5v-5c0-.351.149-.5.5-.5h6a.5.5 0 0 0 .5-.5v-6c0-.911-.589-1.5-1.5-1.5H3c-1.233 0-2-.767-2-2s.767-2 2-2h5.076l-3.026.998a.5.5 0 1 0 .313.949L23.482.974a.5.5 0 1 0-.314-.95l-12.1 3.99C11.045 4.01 11.024 4 11 4H3C1.206 4 0 5.206 0 7v22c0 1.794 1.206 3 3 3h30.5c.911 0 1.5-.589 1.5-1.5v-5a.5.5 0 0 0-1 0v5c0 .351-.149.5-.5.5H3c-1.233 0-2-.767-2-2V9.312c.513.433 1.192.688 2 .688h30.5c.351 0 .5.149.5.5V16h-5.5c-.911 0-1.5.589-1.5 1.5v5c0 .911.589 1.5 1.5 1.5h8c.911 0 1.5-.589 1.5-1.5v-6c0-.911-.589-1.5-1.5-1.5" />
+            <circle cx="32" cy="20" r="1" />
+          </g>
+        </svg>
+
+        <h3 class="text-xl font-semibold mb-2">60% – Life Wallet</h3>
+        <p class="text-gray-700 text-sm">
+          We use this to handle your real-life needs directly — food, rent,
+          health, school fees, and electricity.
+        </p>
+      </div>
+
+      <!-- second card -->
+      <div
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-orange-50 cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="mb-3">
+          <rect width="24" height="24" fill="none" />
+          <g fill="#000" fill-rule="evenodd" clip-rule="evenodd">
+            <path
+              d="M19.773 8.259c.998-1.947 2.856-5.652.689-5.941a33 33 0 0 0-5.222-.36q.072-.446.07-.898C15.25-.238 13.493.02 12.983.02a4.9 4.9 0 0 0-1.487.16C8.13.91 8.36.75 7.272 1.02a10.2 10.2 0 0 0-2.566.998a1.19 1.19 0 0 0-.45 1.198c0 .24.74 3.485.89 4.064c.259 1.058.369 1.228.908 3.415c.07.29.08.799.51.839a.3.3 0 0 0 .329-.27c0-.33-.51-1.588-1.119-5.681c1.219.29 3.505-1.987 3.216-3.814c2.995-.57 2.765-.85 3.993-.89c.39 0 1.348-.219 1.588.1c.1.13 0 .83.05 1c-.52 0-3.235.159-3.595.548a3.47 3.47 0 0 0-.499 1.887c-.06.46-.639 5.422-.559 5.861a.32.32 0 0 0 .38.31c.16 0 .848-4.573.858-4.653a2.49 2.49 0 0 0 2.247-.49a3.07 3.07 0 0 0 1.318-2.356h2.476a2.686 2.686 0 0 0 2.486 3.325c-.2.5-.42.999-.649 1.508l-.3.829c-.13.4.49.729.66.34c.05-.14-.04.09.329-.83M5.675 4.904c-.1-.7-.29-1.628-.29-1.648c-.09-.719.15-.44.819-.719A10.3 10.3 0 0 1 8.2 1.938c-.14.78-1.748 2.846-2.526 2.966m7.209-.44c-1.258.999-.999.7-1.558.78q.123-.93.35-1.838c.09 0 .998-.19 2.386-.28c-.16.56-.879 1.089-1.178 1.338m5.9.37c-.998-.999-.828-1.588-.848-1.678c.809 0 1.617.11 2.406.19c.42 0-.17 1.887-.31 2.297a2.55 2.55 0 0 1-1.247-.81" />
+            <path
+              d="M22.509 14.799c-.26-1.129-.949-1.997-2.107-1.868c-.14-.24.42-2.396-1.258-3.145a2.1 2.1 0 0 0-.67-.2c-.48-.07-.97.03-1.387.28c-.53.25-2.766.919-2.766.939c-.469.12-4.992.928-6.26.998c-1.458.05-3.874-.15-2.936-1.288a.31.31 0 0 0 0-.42c-.389-.329-.858.54-.828 1.06c.07 1.287 2.506 1.657 3.794 1.707c4.194.15 9.326-2.077 9.565-2.557c1.498.25 1.827 1.418 2.067 2.996c-.53.749-1.138.37-2.806.729c-1.248.27-1.997.878-1.927 2.156a2.37 2.37 0 0 0 1.488 2.147q.441.143.899.22a5.4 5.4 0 0 0 2.526-.05c-.1 2.775-.41 2.766-1.997 3.305c-2.566.838-10.744 1.727-12.98.34c-1.378-.76-1.598-2.158-1.927-3.585a26.8 26.8 0 0 1-.76-5.691c-.049-3.066.16-3.096 1.998-4.424a.34.34 0 0 0-.39-.549C1.85 9.287 1.491 9.507 1.431 12.891a27 27 0 0 0 .57 5.891c.369 1.788.618 3.325 2.236 4.334c3.185 1.997 14.438.25 15.766-1.668a6 6 0 0 0 .509-3.145a3.055 3.055 0 0 0 1.997-3.505m-4.903 2.665a2.65 2.65 0 0 1-1.108-.359c-.53-.43-.729-1.508-.14-1.887c1.398-.889 3.215-.14 3.994-1.618c.09 0 1.158-.31 1.408 1.348c.26 2.047-2.197 2.976-4.154 2.516" />
+            <path
+              d="M15.849 9.207a2.8 2.8 0 0 1 1.128-.2c.09.51.999.31.929-.09c-.09-.718-.52-.918-1.258-.998a2.13 2.13 0 0 0-1.907.869c-.197.342-.29.734-.27 1.128c-.09.39.809.3.819-.06c.19-.45.29-.53.559-.649" />
+          </g>
+        </svg>
+
+        <h3 class="text-xl font-semibold mb-2">25% – Emergency Wallet</h3>
+        <p class="text-gray-700 text-sm">
+          For when life surprises you. You can borrow small — no interest if
+          you repay quickly.
+        </p>
+      </div>
+
+      <!-- third card -->
+      <div
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-[#F6FAFD] cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="mb-3">
+          <rect width="48" height="48" fill="none" />
+          <circle cx="24" cy="24" r="21.5" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1" />
+          <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+            <path d="M32.28 29.7c1.113-.45 3.092-1.048 3.688-.326c.644.781-.17 2.477-.92 3.794" />
+            <path d="M11.798 30.223c1.759 1.397 6.954 3.535 12.488 3.535c5.276 0 8.497-1.912 10.167-3.08" />
+          </g>
+          <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+            <rect width="18.804" height="12.318" x="14.598" y="13.075" rx="1" ry="1" />
+            <path d="M27.327 13.075v-1.907a1.8 1.8 0 0 0-1.8-1.8h-3.054a1.8 1.8 0 0 0-1.8 1.8v1.907" />
+          </g>
+        </svg>
+
+        <h3 class="text-xl font-semibold mb-2">5% – Business Wallet</h3>
+        <p class="text-gray-700 text-sm">
+          For your hustle or side gig. Get small business credit to expand and
+          earn more.
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-10 text-center text-sm md:text-base italic" data-aos="fade-up" data-aos-delay="100">
+      “You’re not just saving — you’re securing your life.”
+    </p>
+  </section>
+
+  <!-- MEMBER STORY SECTION -->
+  <section class="bg-[#E3F7EF] py-20 px-6 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
+      <!-- Images -->
+      <div class="relative h-50 md:h-96 flex items-center justify-center w-full md:w-[30%] lg:w-1/2">
+        <img src="./assets/images/partnerImg1.svg" alt="Partner 1" data-aos="fade-right" data-aos-delay="200"
+          class="absolute md:right-30 right-10 top-0 md:w-100 w-60 left-10 drop-shadow-lg" />
+
+        <img src="./assets/images/partnerImg2.svg" alt="Partner 2" data-aos="fade-left" data-aos-delay="200"
+          class="absolute right-5 md:-right-10 top-0 w-40 sm:w-40 md:w-70 drop-shadow-lg" />
+      </div>
+
+      <!-- Text -->
+      <div class="lg:w-1/2 md:w-[70%]" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4 leading-tight text-shadow-lg/10">
+          Meet Mama Ngozi — One of Us.
+        </h2>
+
+        <p class="mb-4 text-shadow-2xs">
+          Every morning, Mama Ngozi opens her small food stall at Oyingbo
+          market. Some days, business is good. Other days, not so much.
+        </p>
+
+        <p class="mb-4 text-shadow-2xs">
+          Before TribeArc, she used to worry — “How will I feed my children
+          this week? What if my landlord shows up?”
+        </p>
+
+        <p class="mb-4 text-shadow-2xs">
+          Now, she saves just ₦1,000 every week through TribeArc. Her food
+          supply is steady, her rent plan is sorted, and when her child fell
+          sick, the emergency wallet helped instantly.
+        </p>
+
+        <p class="font-semibold">
+          “TribeArc is like having a big family that never lets you fall.”
+        </p>
+      </div>
+    </div>
+    <p class="mt-4 italic text-gray-600 text-center">
+      “You’re not alone anymore.”
+    </p>
+  </section>
+
+  <!-- WHY IT WORKS SECTION -->
+  <section class="py-20 px-6 max-w-6xl mx-auto relative" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      The Power of Collective Progress.
+    </h2>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+      <!-- first card -->
+      <div data-aos="fade-right" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-purple-100 cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 576 512" class="mb-6">
+          <rect width="576" height="512" fill="none" />
+          <path fill="#000"
+            d="M419.5 96c-16.6 0-32.7 4.5-46.8 12.7c-15.8-16-34.2-29.4-54.5-39.5c28.2-24 64.1-37.2 101.3-37.2C505.9 32 576 102 576 188.5c0 41.5-16.5 81.3-45.8 110.6l-71.1 71.1C429.8 399.5 390 416 348.5 416C262.1 416 192 346 192 259.5c0-1.5 0-3 .1-4.5c.5-17.7 15.2-31.6 32.9-31.1s31.6 15.2 31.1 32.9v2.6c0 51.1 41.4 92.5 92.5 92.5c24.5 0 48-9.7 65.4-27.1l71.1-71.1c17.3-17.3 27.1-40.9 27.1-65.4c0-51.1-41.4-92.5-92.5-92.5zm-144.3 77.3c-1.9-.8-3.8-1.9-5.5-3.1c-12.6-6.5-27-10.2-42.1-10.2c-24.5 0-48 9.7-65.4 27.1l-71.1 71.1C73.8 275.5 64 299.1 64 323.6c0 51.1 41.4 92.5 92.5 92.5c16.5 0 32.6-4.4 46.7-12.6c15.8 16 34.2 29.4 54.6 39.5c-28.2 23.9-64 37.2-101.3 37.2C70.1 480.2 0 410.2 0 323.7c0-41.5 16.5-81.3 45.8-110.6l71.1-71.1c29.3-29.3 69.1-45.8 110.6-45.8c86.6 0 156.5 70.6 156.5 156.9v3.9c-.4 17.7-15.1 31.6-32.8 31.2s-31.6-15.1-31.2-32.8v-2.3c0-33.7-18-63.3-44.8-79.6z" />
+        </svg>
+
+        <p class="text-gray-700 text-md">
+          Collective buying reduces cost of living
+        </p>
+      </div>
+
+      <!-- second card -->
+      <div data-aos="fade-right" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-[#FFF8ED] cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="mb-6">
+          <rect width="24" height="24" fill="none" />
+          <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <path
+              d="M5 13.5H3a1 1 0 0 0-1 1V21a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6.5a1 1 0 0 0-1-1m1 1h5.75a1.25 1.25 0 1 1 0 2.5H9.5" />
+            <path
+              d="M11 17h3.692a4 4 0 0 0 2.363-.773l2.629-1.925a1.44 1.44 0 0 1 1.896.117a1.43 1.43 0 0 1-.088 2.105l-4.397 3.578A4 4 0 0 1 14.57 21H6M19 7A5 5 0 1 1 9 7a5 5 0 0 1 10 0" />
+          </g>
+        </svg>
+
+        <p class="text-gray-700 text-md">
+          Savings protect against financial shocks
+        </p>
+      </div>
+
+      <!-- third card -->
+      <div data-aos="fade-left" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-[#FFFEE0] cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256" class="mb-6">
+          <rect width="256" height="256" fill="none" />
+          <path fill="#000"
+            d="M252.51 108.8L227 57.75a14 14 0 0 0-18.78-6.27l-25.56 12.78l-53.13-14.06a6.1 6.1 0 0 0-3.06 0L73.34 64.26L47.79 51.48A14 14 0 0 0 29 57.75L3.49 108.8a14 14 0 0 0 6.26 18.78l27.15 13.58l55.61 39.72a6 6 0 0 0 2 .94l64 16a6 6 0 0 0 1.49.18a6 6 0 0 0 4.24-1.76l55.31-55.31l26.7-13.35a14 14 0 0 0 6.26-18.78m-53 35.16l-35.8-28.68a6 6 0 0 0-8 .45c-18.65 18.79-39.5 16.42-52.79 7.92a2 2 0 0 1-.94-1.5a1.9 1.9 0 0 1 .51-1.55L146.43 78h33.86l28.41 56.82Zm-185.4-28.27a2 2 0 0 1 .11-1.52l25.52-51.06a2 2 0 0 1 1.8-1.1a2 2 0 0 1 .89.21l22.21 11.1L37.32 128l-22.21-11.1a2 2 0 0 1-1-1.21m144.05 69.67l-59.6-14.9l-50.9-36.36l29.18-58.35L128 62.21l14.8 3.92a5.9 5.9 0 0 0-3 1.57l-45.7 44.35a14 14 0 0 0 2.39 21.72c20.22 12.92 44.75 10.49 63.8-5.89L191 152.5Zm83.73-69.67a2 2 0 0 1-1 1.16L218.68 128l-27.32-54.68l22.21-11.1a2 2 0 0 1 1.53-.11a2 2 0 0 1 1.16 1l25.52 51.06a2 2 0 0 1 .11 1.52m-112 101.76a6 6 0 0 1-7.27 4.37l-41.73-10.43a5.9 5.9 0 0 1-2-.94l-26.37-18.81a6 6 0 1 1 7-9.77L84.91 200l40.61 10.15a6 6 0 0 1 4.36 7.3Z" />
+        </svg>
+
+        <p class="text-gray-700 text-md">Transparent system builds trust</p>
+      </div>
+
+      <!-- fourth card -->
+      <div data-aos="fade-left" data-aos-delay="100"
+        class="p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300 hover:-translate-y-2 bg-[#F2FFFC] cursor-default flex flex-col items-center text-center">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 12 12" class="mb-6">
+          <rect width="12" height="12" fill="none" />
+          <path fill="#000"
+            d="M4.25 3.25a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0m-2 2.25a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5M11 4.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M5.25 6C4.56 6 4 6.56 4 7.25V8.5a2 2 0 1 0 4 0V7.25C8 6.56 7.44 6 6.75 6zM3 7.25c0-.289.054-.565.154-.818l-1.231.33a1.25 1.25 0 0 0-.884 1.53l.194.725a2 2 0 0 0 2.45 1.414l.017-.005A3 3 0 0 1 3 8.5zM9 8.5c0 .733-.263 1.405-.7 1.927l.016.004a2 2 0 0 0 2.449-1.414l.194-.725a1.25 1.25 0 0 0-.884-1.53l-1.228-.33c.099.254.153.53.153.818z" />
+        </svg>
+
+        <p class="text-gray-700 text-md">
+          Community-led support, not charity
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN THE MOVEMENT SECTION -->
+  <section class="bg-[#E3F7EF] py-20 px-6 text-center relative" data-aos="fade-up">
+    <h2 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-down" data-aos-delay="100">
+      Join the Tribe. Start Your Journey Today.
+    </h2>
+    <p class="mb-6 text-sm md:text-base w-full max-w-4xl text-center mx-auto" data-aos="fade-up" data-aos-delay="100">
+      You can start with as little as ₦500 or ₦1,000 weekly. Once you join,
+      your field officer helps you plan for food, rent, school fees, or health
+      — whatever matters most.
+    </p>
+    <div class="flex justify-center mb-8 gap-4 flex-wrap">
+      <a href="./contact.html"
+        class="bg-white text-sm md:text-base text-green-600 font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:shadow-2xl transition duration-300 transform hover:scale-105"
+        data-aos="fade-right" data-aos-delay="100">
+        Talk to a Field Officer
+      </a>
+      <a href="./join_tribearc.html"
+        class="bg-[#4CA054] text-sm md:text-base text-white font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:bg-green-700 transition transform hover:scale-105"
+        data-aos="fade-left" data-aos-delay="100">
+        Join Now
+      </a>
+    </div>
+    <p class="mt-8 italic text-sm">“Welcome to the Tribe”</p>
+  </section>
+
+  <!-- CONSISTENT FOOTER -->
+  <div id="footer"></div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

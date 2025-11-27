@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Stories – TribeArc Nation</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="text-gray-800 bg-white relative overflow-x-hidden">
+  <!-- HERO SECTION -->
+  <section class="relative bg-cover bg-bottom bg-no-repeat bg-fixed h-[80vh] flex items-center px-6 py-12"
+    style="background-image: url('./assets/images/about_backdrop.png')">
+    <!-- green overlay -->
+    <div class="absolute inset-0 bg-[#142A12BA] z-0"></div>
+
+    <!-- HEADER -->
+    <header class="w-full px-4 absolute top-6 left-1/2 -translate-x-1/2 z-20" data-aos="fade-down" data-aos-delay="100">
+      <nav
+        class="bg-white w-full md:w-[85%] mx-auto p-4 rounded-2xl shadow-sm shadow-[#B8D8BB] flex items-center justify-between">
+        <a href="./index.html"><img src="./assets/images/logo.svg" alt="Tribearc" class="h-8" /></a>
+
+        <ul class="hidden md:flex text-black items-center gap-6 text-sm font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+
+          <a href="./contact.html">
+            <button
+              class="cursor-pointer bg-[#4CA054] hover:bg-green-700 transition duration-300 py-2.5 px-4 rounded-xl text-white font-semibold">
+              Contact Us
+            </button></a>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <button id="mobile-menu-btn" class="md:hidden cursor-pointer z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="#000" d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar"
+      class="fixed top-0 right-0 h-full w-[70%] rounded-l-xl bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
+      <!-- Close Button -->
+      <button id="close-sidebar-btn" class="absolute top-6 right-6 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#000"
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+        </svg>
+      </button>
+
+      <!-- Menu stuff -->
+      <div class="pt-20 px-6">
+        <img src="./assets/images/logo.svg" alt="Tribearc" class="h-8 mb-8" />
+
+        <ul class="flex flex-col gap-6 text-black text-base font-medium">
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./investors.html">Investors</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./members_stories.html">Member Stories</a>
+          </li>
+          <li class="hover:text-[#4CA054] cursor-pointer transition border-b border-gray-100 pb-3">
+            <a href="./join_tribearc.html">Join Tribearc</a>
+          </li>
+        </ul>
+
+        <a href="./contact.html">
+          <button
+            class="w-full bg-[#4CA054] hover:bg-green-700 transition duration-300 py-3 px-4 rounded-xl text-white font-semibold mt-8">
+            Contact Us
+          </button></a>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="sidebar-overlay"
+      class="fixed inset-0 bg-black/50 bg-opacity-50 hidden transition-opacity duration-300 z-30"></div>
+
+    <!-- HERO CONTENT -->
+    <div
+      class="w-full md:w-[90%] lg:w-[80%] mx-auto px-4 relative z-10 mt-10 md:mt-8 flex flex-col gap-14 items-center">
+      <div class="text-center px-4 max-w-2xl">
+        <div class="bg-gray-50 text-[#69707C] text-sm py-2 px-4 w-fit mx-auto rounded-full mt-20 mb-6 flex items-center"
+          data-aos="fade-down" data-aos-delay="100">
+          <span class="bg-green-600 w-1 h-1 rounded-full inline-block mr-2"></span>
+          Together We Rise Above Survival
+          <span class="bg-green-600 w-1 h-1 rounded-full inline-block ml-2"></span>
+        </div>
+
+        <h1 class="text-3xl md:text-5xl font-bold py-2 text-white" data-aos="fade-down" data-aos-delay="100">
+          From Panic to Peace
+        </h1>
+
+        <p class="text-sm md:text-base mb-8 text-[#DEE2E9] leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+          TribeArc Nation is transforming how Nigerians save, live, and grow.
+          Join us to create lasting social and economic impact.
+        </p>
+
+        <div class="flex justify-center mb-8 gap-4 flex-wrap">
+          <a href="./how_it_works.html"
+            class="bg-white text-sm md:text-base text-green-600 font-semibold py-2 px-4 rounded-lg md:rounded-xl transition duration-300 transform hover:scale-105"
+            data-aos="fade-right" data-aos-delay="100">
+            Share your story
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="bg-[#DFF4E9] py-20 px-6">
+    <div class="md:w-[85%] mx-auto text-center">
+      <!-- heading -->
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0A2E26]">
+        Every Kobo Counts. Every Story Matters.
+      </h2>
+      <p class="mt-3 text-[#4A6A63] max-w-2xl mx-auto">
+        Meet Nigerians who transformed worry into confidence — from markets to
+        offices, keke riders to teachers.
+      </p>
+
+      <!-- testimonials -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- first card -->
+        <div class="bg-white rounded-3xl shadow-sm p-6">
+          <div class="flex items-center justify-between mb-4">
+            <img src="./assets/images/member-stories_testimonial1.png" class="w-12 h-12 rounded-full object-cover"
+              alt="" />
+
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <rect width="24" height="24" fill="none" />
+              <g fill="none">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="#4CA054"
+                  d="M8.4 6.2a1 1 0 0 1 1.2 1.6c-1.564 1.173-2.46 2.314-2.973 3.31A3.5 3.5 0 1 1 4 14.558a7.6 7.6 0 0 1 .508-3.614C5.105 9.438 6.272 7.796 8.4 6.2m9 0a1 1 0 0 1 1.2 1.6c-1.564 1.173-2.46 2.314-2.973 3.31A3.5 3.5 0 1 1 13 14.558a7.6 7.6 0 0 1 .508-3.614c.598-1.506 1.764-3.148 3.892-4.744" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="text-left">
+            <p class="font-semibold text-[#0A2E26]">
+              Mama Ngozi – Oyingbo Market
+            </p>
+            <p class="text-sm text-[#4A6A63] mt-1">
+              Before TribeArc, I worried about feeding my children. Now, the
+              emergency wallet helped instantly. I sleep at night without
+              fear.
+            </p>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="bg-white rounded-3xl shadow-sm p-6">
+          <div class="flex items-center justify-between mb-4">
+            <img src="./assets/images/testimonial2.png" class="w-12 h-12 rounded-full object-cover" alt="" />
+
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <rect width="24" height="24" fill="none" />
+              <g fill="none">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="#4CA054"
+                  d="M8.4 6.2a1 1 0 0 1 1.2 1.6c-1.564 1.173-2.46 2.314-2.973 3.31A3.5 3.5 0 1 1 4 14.558a7.6 7.6 0 0 1 .508-3.614C5.105 9.438 6.272 7.796 8.4 6.2m9 0a1 1 0 0 1 1.2 1.6c-1.564 1.173-2.46 2.314-2.973 3.31A3.5 3.5 0 1 1 13 14.558a7.6 7.6 0 0 1 .508-3.614c.598-1.506 1.764-3.148 3.892-4.744" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="text-left">
+            <p class="font-semibold text-[#0A2E26]">
+              Mama Ngozi – Oyingbo Market
+            </p>
+            <p class="text-sm text-[#4A6A63] mt-1">
+              Before TribeArc, I worried about feeding my children. Now, the
+              emergency wallet helped instantly. I sleep at night without
+              fear.
+            </p>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="bg-white rounded-3xl shadow-sm p-6">
+          <div class="flex items-center justify-between mb-4">
+            <img src="./assets/images/testimonial3.png" class="w-12 h-12 rounded-full object-cover" alt="" />
+
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <rect width="24" height="24" fill="none" />
+              <g fill="none">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="#4CA054"
+                  d="M8.4 6.2a1 1 0 0 1 1.2 1.6c-1.564 1.173-2.46 2.314-2.973 3.31A3.5 3.5 0 1 1 4 14.558a7.6 7.6 0 0 1 .508-3.614C5.105 9.438 6.272 7.796 8.4 6.2m9 0a1 1 0 0 1 1.2 1.6c-1.564 1.173-2.46 2.314-2.973 3.31A3.5 3.5 0 1 1 13 14.558a7.6 7.6 0 0 1 .508-3.614c.598-1.506 1.764-3.148 3.892-4.744" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="text-left">
+            <p class="font-semibold text-[#0A2E26]">
+              Mama Ngozi – Oyingbo Market
+            </p>
+            <p class="text-sm text-[#4A6A63] mt-1">
+              Before TribeArc, I worried about feeding my children. Now, the
+              emergency wallet helped instantly. I sleep at night without
+              fear.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBER STORIES -->
+  <section class="bg-white pt-20 ">
+    <div class="md:w-[85%] w-full mx-auto text-center">
+      <!-- heading -->
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0A2E26] px-6">
+        See the Change in Action
+      </h2>
+      <p class="mt-3 text-[#4A6A63] max-w-2xl mx-auto px-6">
+        Watch members tell their stories — from markets to offices — and see
+        how TribeArc transformed their everyday life.
+      </p>
+
+      <!-- cards -->
+      <div class="flex flex-wrap gap-6 py-20 px-6 w-full mx-auto md:justify-between justify-center">
+        <!-- card 1 -->
+        <div class="relative w-80 h-96 rounded-xl overflow-hidden text-left">
+          <!-- gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-[#ebe8e1] via-black/30 to-black/80"></div>
+
+          <!-- image -->
+          <img src="./assets/images/member-stories_testimonial1.png" alt="member"
+            class="absolute inset-0 w-full h-full object-cover mix-blend-multiply bg-blend-overlay" />
+
+          <!-- bottom-left text -->
+          <div class="absolute bottom-5 left-5 right-4 w-[80%]">
+            <h2 class="font-semibold mb-1 text-white text-2xl" data-aos="fade-down" data-aos-delay="100">
+              Mama Ngozi – Oyingbo Market
+            </h2>
+            <p class="text-xs text-[#DEE2E9] leading-snug mb-3" data-aos="fade-up" data-aos-delay="100">
+              Before TribeArc, I worried about feeding my children. Now, the
+              emergency wallet helped instantly. I sleep at night without
+              fear.
+            </p>
+            <button
+              class="text-[#147F51] text-xs font-semibold bg-white w-fit py-2 px-4 rounded-full flex items-center gap-1 hover:bg-white/90 cursor-pointer"
+              data-aos="fade-right" data-aos-delay="100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                <rect width="48" height="48" fill="none" />
+                <defs>
+                  <mask id="SVGu4ff0bvt">
+                    <g fill="none" stroke-linejoin="round" stroke-width="4">
+                      <path fill="#fff" stroke="#fff"
+                        d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
+                      <path fill="#000" stroke="#000" d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z" />
+                    </g>
+                  </mask>
+                </defs>
+                <path fill="#4CA054" d="M0 0h48v48H0z" mask="url(#SVGu4ff0bvt)" />
+              </svg>Watch Video
+            </button>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="relative w-80 h-96 rounded-xl overflow-hidden text-left">
+          <!-- gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-[#ebe8e1] via-black/30 to-black/80"></div>
+
+          <!-- image -->
+          <img src="./assets/images/userSory2.svg" alt="member"
+            class="absolute inset-0 w-full h-full object-cover mix-blend-multiply bg-blend-overlay" />
+
+          <div class="absolute bottom-5 left-5 right-4 w-[80%]">
+            <h2 class="font-semibold mb-1 text-white text-2xl" data-aos="fade-down" data-aos-delay="100">
+              Mr Umar – Interior Carpenter
+            </h2>
+            <p class="text-xs text-[#DEE2E9] leading-snug mb-3" data-aos="fade-up" data-aos-delay="100">
+              Before TribeArc, I worried about feeding my children. Now, the
+              emergency wallet helped instantly. I sleep at night without
+              fear.
+            </p>
+            <button
+              class="text-[#147F51] text-xs font-semibold bg-white w-fit py-2 px-4 rounded-full flex items-center gap-1 hover:bg-white/90 cursor-pointer"
+              data-aos="fade-right" data-aos-delay="100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                <rect width="48" height="48" fill="none" />
+                <defs>
+                  <mask id="SVGu4ff0bvt">
+                    <g fill="none" stroke-linejoin="round" stroke-width="4">
+                      <path fill="#fff" stroke="#fff"
+                        d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
+                      <path fill="#000" stroke="#000" d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z" />
+                    </g>
+                  </mask>
+                </defs>
+                <path fill="#4CA054" d="M0 0h48v48H0z" mask="url(#SVGu4ff0bvt)" />
+              </svg>Watch Video
+            </button>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="relative w-80 h-96 rounded-xl overflow-hidden text-left">
+          <!-- gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-[#ebe8e1] via-black/30 to-black/80"></div>
+
+          <!-- image -->
+          <img src="./assets/images/userStory3.svg" alt="member"
+            class="absolute inset-0 w-full h-full object-cover mix-blend-multiply bg-blend-overlay" />
+
+          <!-- bottom-left text -->
+          <div class="absolute bottom-5 left-5 right-4 w-[80%]">
+            <h2 class="font-semibold mb-1 text-white text-2xl" data-aos="fade-down" data-aos-delay="100">
+              Jide Akoo – Plumber in Lagos
+            </h2>
+            <p class="text-xs text-[#DEE2E9] leading-snug mb-3" data-aos="fade-up" data-aos-delay="100">
+              Before TribeArc, I worried about feeding my children. Now, the
+              emergency wallet helped instantly. I sleep at night without
+              fear.
+            </p>
+            <button
+              class="text-[#147F51] text-xs font-semibold bg-white w-fit py-2 px-4 rounded-full flex items-center gap-1 hover:bg-white/90 cursor-pointer"
+              data-aos="fade-right" data-aos-delay="100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                <rect width="48" height="48" fill="none" />
+                <defs>
+                  <mask id="SVGu4ff0bvt">
+                    <g fill="none" stroke-linejoin="round" stroke-width="4">
+                      <path fill="#fff" stroke="#fff"
+                        d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
+                      <path fill="#000" stroke="#000" d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z" />
+                    </g>
+                  </mask>
+                </defs>
+                <path fill="#4CA054" d="M0 0h48v48H0z" mask="url(#SVGu4ff0bvt)" />
+              </svg>Watch Video
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey -->
+  <section class="bg-gradient-to-t from-[#1AC47D47] via-[#D9F4E980] to-white  py-20 px-6 text-center relative"
+    data-aos="fade-up">
+    <h2 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-down" data-aos-delay="100">
+      Your Journey Inspires Others
+    </h2>
+    <p class="mb-6 text-sm md:text-base w-full max-w-4xl text-center mx-auto" data-aos="fade-up" data-aos-delay="100">
+      Whether you’re a trader, driver, teacher, nurse, banker or tech bro,
+      your story can inspire thousands of Nigerians to take the first step
+      toward financial stability.
+    </p>
+    <div class="flex justify-center mb-8 gap-4 flex-wrap">
+      <a href="./how_it_works.html"
+        class="bg-[#4CA054] text-sm md:text-base text-white font-semibold py-2 px-4 rounded-lg md:rounded-xl shadow-lg shadow-[#B8D8BB] hover:bg-green-700 transition transform hover:scale-105"
+        data-aos="fade-left" data-aos-delay="100">
+        Share Your Story
+      </a>
+    </div>
+  </section>
+
+  <!-- Consistent footer -->
+  <div id="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
